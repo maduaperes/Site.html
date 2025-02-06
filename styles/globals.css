@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #f5f5dc;
+    background-color: #ffffff;
     font-family: 'arial';
 }
 
@@ -15,7 +15,7 @@ body{
     margin-right: auto;
 }
 .navbar{
-    background-color: #c9b79c;
+    background-color: #000000;
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -31,10 +31,8 @@ body{
 
 .logo{
     color: #ffffff;
-}
-
-.logo span{
-    color: #a1927a;
+    margin-left: 2%;
+    cursor: pointer;
 }
 
 nav ul{
@@ -49,17 +47,23 @@ nav ul{
 }
 
 .nav-icon-container img{
-    width: 30px;
+    position: relative;
+    width: 35px;
     cursor: pointer;
+    right: -70px;
 }
 
-.nav-icon-container img:first-child{
-    margin-right: 1rem;
+.nav-icon-container2 img{
+    position: relative;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
 nav ul li{
     color: #ffffff;
-    margin-right: 1.5rem;
+    margin-right: 5.0rem;
     cursor: pointer;
 }
 
@@ -67,6 +71,50 @@ nav ul li:hover{
     transform: translateY(-5px);
     transition: all 0.2s;
     font-weight: bold;
+}
+
+.search-container{
+    margin-left: 1.0rem;
+    position: center;
+    width: 300px;
+    display: flex;
+}
+
+input#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 35px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    &:focus{
+      border: 1px solid #000000;
+      transition: 0.35s ease;
+      color: #000000;
+      &::-webkit-input-placeholder{
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &:-ms-placeholder {
+       transition: opacity 0.45s ease; 
+         opacity: 0;
+       }    
+     }
+   }
+  
+.search-icon{
+    position: relative;
+    float: right;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    right: 33px;
+    opacity: 20%;
 }
 
 .menu-button{
@@ -82,8 +130,8 @@ nav ul li:hover{
 }
 
 .header-bottom-side-right img{
-    width: 900px!important;
-    height: 510px!important;
+    background-image: url(styles/images/mulheres.png);
+    width: 100%;
     -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
     -o-filter: blur(3px);
@@ -97,12 +145,23 @@ nav ul li:hover{
     align-items: center;
     top: 200px;
     font-size: 40px;
-    color: #a1927a;
+    color: #000000;
   }
 
   .header-bottom-side-right h3{
     font-family: 'Arial';
     position: absolute;
     font-size: 20px;
-    color: #a1927a;
+    color: #000000;
   }
+
+  .header-bottom-side-right button{
+    border: none;
+    cursor: pointer;
+    border-radius: 500px;
+    background-color: #000000;
+    padding: 0.8rem 3.8rem;
+    align-items: center;
+    color: #ffffff;
+    box-shadow: 0px 10px 10px #2c2c2c;
+}
